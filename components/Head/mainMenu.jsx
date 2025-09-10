@@ -14,11 +14,7 @@ export function MainMenu() {
             <nav className="navbar navbar-expand-lg main_menu bg-amber-200">
                 <div className="container">
                     <Link className="navbar-brand" href="/">
-                        <img
-                            src="https://www.creativedesign.com.bd/assets/front/img/header_logo_17368734951488188050.png"
-                            alt="Creative Design |  ক্রিয়েটিভ ডিজাইন"
-                            className="img-fluid w-100"
-                        />
+                        <h2 className="text-blue orbitron-700">SoftVasion</h2>
                     </Link>
 
                     {/* Mobile toggle button */}
@@ -38,16 +34,16 @@ export function MainMenu() {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav m-auto">
                             <li className="nav-item">
-                                <Link className={isActive("/")} href="/">হোম</Link>
+                                <Link className={isActive("/")} href="/">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={isActive("/about")} href="/about">আমাদের সম্পর্কে</Link>
+                                <Link className={isActive("/about")} href="/about">About Us</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={isActive("/service")} href="/service">সার্ভিস</Link>
+                                <Link className={isActive("/service")} href="/service">Services</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className={isActive("/products")} href="/products">প্রোডাক্ট</Link>
+                                <Link className={isActive("/products")} href="/products">Products</Link>
                             </li>
                             {/* <li className="nav-item dropdown">
                                 <Link
@@ -68,7 +64,7 @@ export function MainMenu() {
                                 </ul>
                             </li> */}
                             <li className="nav-item">
-                                <Link className={isActive("/contactus")} href="/contactus">যোগাযোগ</Link>
+                                <Link className={isActive("/contactus")} href="/contactus">Contact</Link>
                             </li>
                         </ul>
 

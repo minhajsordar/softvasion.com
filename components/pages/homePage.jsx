@@ -14,10 +14,6 @@ export default function homePage() {
     ===============================*/}
   <section
     className="banner"
-    style={{
-      background:
-        "url(https://www.creativedesign.com.bd/assets/front/img/17361026461740401592.jpg) no-repeat center/cover"
-    }}
   >
     <div className="container">
       <div className="row">
@@ -26,19 +22,16 @@ export default function homePage() {
           data-wow-duration="1s"
         >
           <div className="banner_content">
-            <h3>৬ বছরের বাস্তব অভিজ্ঞতা</h3>
-            <h1>Creating New Ideas for Your Business</h1>
+            <h1 className='font-orbitron !font-normal !text-sm'>Creating The Future of Software Technology.</h1>
             <p className="description">
-              আমাদের কাছ থেকে মাত্র 8000TK দিয়ে আপনার স্বপ্নের ওয়েবসাইট তৈরি
-              করুন। আমরা Laravel দিয়ে আপনার ওয়েবসাইট তৈরি করব। আপনার ওয়েবসাইট
-              হবে 100% প্রতিক্রিয়াশীল এবং নিরাপদ।
+               Top Software Company in Bangladesh for Brands
             </p>
             <div className="banner_btn d-flex flex-wrap">
               <a
-                href="https://www.creativedesign.com.bd/gate-a-quote"
+                href="/assets/image/futuristicbg.jpg) no-repeat center center / cover"
                 className="common_btn"
               >
-                ফ্রি কনসালটেশন
+                Get In Touch
               </a>
               <a
                 className="venobox play_btn"
@@ -57,9 +50,9 @@ export default function homePage() {
         >
           <div className="banner_img">
             <img
-              src="https://www.creativedesign.com.bd/assets/front/img/17361014651911523454.png"
+              src="/assets/image/futuristicbg.jpg"
               alt="banner-img"
-              className="img-fluid w-100"
+              className="img-fluid w-100 !rounded overflow-hidden"
             />
           </div>
         </div>
