@@ -4,16 +4,14 @@ export default function achivementSection() {
     return (
         <>
             <>
-                {/*==============================
-  ACHIEVEMENTS START
-    ===============================*/}
-                <section className="achievements pt_115 xs_mt_75">
+
+                <section className="achievements xs_mt_75 mt-5">
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-8 m-auto">
                                 <div className="section_heading">
-                                    <h3>অর্জন সমূহ</h3>
-                                    <h2>আমাদের অর্জন সমূহ</h2>
+                                    <h3>Achievements</h3>
+                                    <h2>Our Achievements</h2>
                                 </div>
                             </div>
                         </div>
@@ -30,9 +28,9 @@ export default function achivementSection() {
                                         </span>
                                     </div>
                                     <h4>
-                                        <span className="counter">568</span>+
+                                        <span className="counter">500</span>+
                                     </h4>
-                                    <p>কমপ্লিট প্রোজেক্ট</p>
+                                    <p>Completed Projects</p>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="1s">
@@ -47,9 +45,9 @@ export default function achivementSection() {
                                         </span>
                                     </div>
                                     <h4>
-                                        <span className="counter">456</span>+
+                                        <span className="counter">300</span>+
                                     </h4>
-                                    <p>সেটিস্ফাইড কাস্টমার</p>
+                                    <p>Satisfied Customers</p>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="1s">
@@ -64,9 +62,9 @@ export default function achivementSection() {
                                         </span>
                                     </div>
                                     <h4>
-                                        <span className="counter">256</span>+
+                                        <span className="counter">270</span>+
                                     </h4>
-                                    <p>গ্রোইং বিজনেস</p>
+                                    <p>Growing Businesses</p>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="1s">
@@ -81,17 +79,16 @@ export default function achivementSection() {
                                         </span>
                                     </div>
                                     <h4>
-                                        <span className="counter">65</span>+
+                                        <span className="counter">50</span>+
                                     </h4>
-                                    <p>সাপোর্ট টিম</p>
+                                    <p>Support Team Members</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                {/*==============================
-  ACHIEVEMENTS END
-    ===============================*/}
+
+
             </>
 
         </>

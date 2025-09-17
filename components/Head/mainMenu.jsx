@@ -11,14 +11,14 @@ export function MainMenu() {
     }
     return (
         <>
-            <nav className="navbar navbar-expand-lg main_menu bg-amber-200">
+            <nav className="navbar navbar-expand-lg main_menu">
                 <div className="container">
-                    <Link className="navbar-brand" href="/">
+                    <Link className="navbar-brand text-center" href="/">
                         <h2 className="text-blue orbitron-700">SoftVasion</h2>
                     </Link>
 
                     {/* Mobile toggle button */}
-                    <button
+                    {/* <button
                         className="navbar-toggler text-blue"
                         type="button"
                         data-bs-toggle="collapse"
@@ -28,12 +28,12 @@ export function MainMenu() {
                         aria-label="Toggle navigation"
                     >
                         <span className="navbar-toggler-icon"></span>
-                    </button>
+                    </button> */}
 
                     {/* Collapsible menu */}
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav m-auto">
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link className={isActive("/")} href="/">Home</Link>
                             </li>
                             <li className="nav-item">
@@ -44,7 +44,7 @@ export function MainMenu() {
                             </li>
                             <li className="nav-item">
                                 <Link className={isActive("/products")} href="/products">Products</Link>
-                            </li>
+                            </li> */}
                             {/* <li className="nav-item dropdown">
                                 <Link
                                     className={`${isActive("/page")} ropdown-toggle`}

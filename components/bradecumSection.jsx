@@ -15,14 +15,14 @@ export default function bradecumSection({images="", title="", title2="", subtitl
                         <div className="container">
                             <div className="row">
                                 <div className="col-12">
-                                    <div className="breadcrumb_text">
-                                        <h1>{title}</h1>
+                                    <div className="breadcrumb_text ">
+                                        <h1 className='orbitron-700'>{title}</h1>
                                         <ul>
                                             <li>
-                                                <a href="#">{subtitle}</a>
+                                                <a className='orbitron-700' href="#">{subtitle}</a>
                                             </li>
                                             <li>
-                                                <a href="#">{title2}</a>
+                                                <a className='orbitron-700' href="#">{title2}</a>
                                             </li>
                                         </ul>
                                     </div>

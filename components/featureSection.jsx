@@ -7,13 +7,13 @@ export default function featureSection() {
                 {/*==============================
   FEATURES START
     ===============================*/}
-                <section className="features pt_115 xs_pt_75 pb_120 xs_pb_80">
+                <section className="features pt_115 xs_pt_75  xs_pb_80">
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-8 m-auto">
                                 <div className="section_heading">
-                                    <h3>আমাদের বৈশিষ্ট্য</h3>
-                                    <h2>আমাদের বিশেষ বৈশিষ্ট্য সমূহ</h2>
+                                    <h3>Our Features</h3>
+                                    <h2>Our special features</h2>
                                 </div>
                             </div>
                         </div>
@@ -31,9 +31,9 @@ export default function featureSection() {
                                         />
                                     </div>
                                     <div className="content">
-                                        <a href="">মার্কেটিং</a>
+                                        <a href="">Marketing</a>
                                         <p>
-                                            আমরা কৌশলগত বিপণন কৌশল ব্যবহার করি যা কাজ করে প্রমাণিত হয়েছে।
+                                            We use strategic marketing techniques that are proven to work.
                                         </p>
                                     </div>
                                 </div>
@@ -51,8 +51,10 @@ export default function featureSection() {
                                         />
                                     </div>
                                     <div className="content">
-                                        <a href="">ওয়েব ডেভেলপমেন্ট</a>
-                                        <p>আপনি ভাবতে পারেন সবচেয়ে জটিল ফাংশন জন্য কাষ্টম প্রোগ্রামিং</p>
+                                        <a href="">Web Development</a>
+                                        <p>
+                                            Custom programming for even the most complex functionalities.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -69,15 +71,14 @@ export default function featureSection() {
                                         />
                                     </div>
                                     <div className="content">
-                                        <a href="">ওয়েব ডিজাইন</a>
+                                        <a href="">Web Design</a>
                                         <p>
-                                            শক্তিশালী ওয়েব ডিজাইন যা আপনার শক্তিশালী প্রতিযোগীদের ছাড়িয়ে
-                                            যাবে।
+                                            Powerful web design that surpasses your strongest competitors.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div
+                            {/* <div
                                 className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp"
                                 data-wow-duration="1s"
                             >
@@ -90,14 +91,13 @@ export default function featureSection() {
                                         />
                                     </div>
                                     <div className="content">
-                                        <a href="">ব্রান্ডিং</a>
+                                        <a href="">Branding</a>
                                         <p>
-                                            একটি শক্ত ব্র্যান্ড কৌশল, লোগো এবং নির্দেশিকা আপনাকে স্বীকৃত
-                                            পেতে সাহায্য করে৷
+                                            A strong brand strategy, logo, and guidelines help you get recognized.
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                             <div
                                 className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp"
                                 data-wow-duration="1s"
@@ -111,15 +111,14 @@ export default function featureSection() {
                                         />
                                     </div>
                                     <div className="content">
-                                        <a href="">স্পিড অপটিমাইজেশন</a>
+                                        <a href="">Speed Optimization</a>
                                         <p>
-                                            ক্লায়েন্ট এর ওয়েবসাইট এর স্পিড অপটিমাইজেশন প্রয়োজন হলে আমরাই
-                                            সেই সার্ভিস প্রোভাইড করে থাকি৷
+                                            We provide speed optimization services for clients’ websites when needed.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div
+                            {/* <div
                                 className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp"
                                 data-wow-duration="1s"
                             >
@@ -132,15 +131,14 @@ export default function featureSection() {
                                         />
                                     </div>
                                     <div className="content">
-                                        <a href="">ফেসবুক পেইজ সেটাপ</a>
+                                        <a href="">Facebook Page Setup</a>
                                         <p>
-                                            ক্লায়েন্ট এর ওয়েবসাইট এর ধরন অনুসারে আমরা ক্লায়েন্ট এর এর
-                                            ফেসবুক পেইজ সেট আপ করে দিয়ে থাকি৷
+                                            We set up clients’ Facebook pages according to their website type.
                                         </p>
                                     </div>
                                 </div>
-                            </div>
-                            <div
+                            </div> */}
+                            {/* <div
                                 className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp"
                                 data-wow-duration="1s"
                             >
@@ -153,37 +151,35 @@ export default function featureSection() {
                                         />
                                     </div>
                                     <div className="content">
-                                        <a href="">এড ক্যাম্পেইন</a>
+                                        <a href="">Ad Campaigns</a>
                                         <p>
-                                            ক্লায়েন্ট এর প্রোডাক্ট বা পন্যের চাহিদা অনুসারে আমরা ক্লায়েন্ট
-                                            এর এড ক্যাম্পেইন রান করে থাকি। সেটি হতে পারে ফেসবুক,ইস্টাগ্রাম
-                                            মার্কেটিং।
+                                            We run ad campaigns for clients’ products according to demand, including Facebook and Instagram marketing.
                                         </p>
                                     </div>
                                 </div>
-                            </div>
-                            <div
+                            </div> */}
+                            {/* <div
                                 className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp"
                                 data-wow-duration="1s"
                             >
                                 <div className="feature_item">
                                     <div className="icon">
                                         <img
-                                            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGYjO7l98powroFDZhP57kirE7k3dIMQK3327avdSh-Y5odyf8Vct9aYNWDt2YzXHiHGykGM-Lc7fVA5LWbXMemNFBWIO_cj0zrE2UlTbuW-HADbho0Q9ZIl93MXh8P5X0KivYvmJTL5FW29cri6zYBc0eAkqgytvOYJFjb1JkO-1xgtwRl3FXucqcoLw/s1600/domain.png"
+                                            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGYjO7l98powroFDZhP57kirE7k3dIMQK3327avdSh-Y5odyf8Vct9aYNWDt2YzXHiHGykGM-Lc7lVA5LWbXMemNFBWIO_cj0zrE2UlTbuW-HADbho0Q9ZIl93MXh8P5X0KivYvmJTL5FW29cri6zYBc0eAkqgytvOYJFjb1JkO-1xgtwRl3FXucqcoLw/s1600/domain.png"
                                             alt="icon"
                                             className="img-fluid w-100"
                                         />
                                     </div>
                                     <div className="content">
-                                        <a href="">ডোমেইন হোস্টিং</a>
+                                        <a href="">Domain & Hosting</a>
                                         <p>
-                                            ক্লায়েন্ট এর কোন প্রকার ডোমেইন এবং হোস্টিং প্রয়োজন হলে তা
-                                            আমরাই প্রোভাইড করে থাকি
+                                            We provide all types of domain and hosting services required by our clients.
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
+
                     </div>
                 </section>
                 {/*==============================

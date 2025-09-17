@@ -1532,7 +1532,7 @@ header {
   overflow: hidden;
 }
 
-.services::after {
+/* .services::after {
   position: absolute;
   content: "";
   background: url();
@@ -1546,7 +1546,7 @@ header {
   opacity: .2;
   animation: serviceAnimi linear 3s infinite alternate;
   -webkit-animation: serviceAnimi linear 3s infinite alternate;
-}
+} */
 
 @keyframes serviceAnimi {
   from {
