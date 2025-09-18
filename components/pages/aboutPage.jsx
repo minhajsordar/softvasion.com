@@ -9,12 +9,18 @@ import BrandSetion from './../brandSection';
 export default function aboutPage() {
   return (
     <>
-        <BradecumSection images='https://www.creativedesign.com.bd/assets/frontend/images/breadcrumb_bg.jpg' title='আমাদের সম্পর্কে' subtitle='হোম'/>
-        <AboutSection />
-        <FeatureSection />
-        <AchivementSection />
-        <ServiceSection />
-        <BrandSetion />
+      <BradecumSection
+        images="/assets/image/image6.jpg"
+        title="About Us"
+        subtitle="Home"
+        title2='About Us'
+      />
+
+      <AboutSection />
+      <FeatureSection />
+      <AchivementSection />
+      <ServiceSection />
+      {/* <BrandSetion /> */}
     </>
   )
 }

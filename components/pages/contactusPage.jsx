@@ -5,8 +5,14 @@ import ContactFrom from './../../app/contactus/_ccomponents/contactFrom';
 export default function contactusPage() {
   return (
     <>
-        <BradecumSection images='https://www.creativedesign.com.bd/assets/frontend/images/breadcrumb_bg.jpg' title='আমাদের সাথে যোগাযোগ করুন' title2='যোগাযোগ' subtitle='হোম'/>
-        <ContactFrom />
+      <BradecumSection
+        images="/assets/image/image7.jpg"
+        title="Contact Us"
+        title2="Contact"
+        subtitle="Home"
+      />
+
+      {/* <ContactFrom /> */}
     </>
   )
 }

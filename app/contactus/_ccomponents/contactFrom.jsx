@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function contactFrom() {
+export default function ContactForm() {
     return (
         <>
             <section className="contact mt_120 xs_mt_80 mb_120 xs_mb_80">
@@ -10,34 +10,34 @@ export default function contactFrom() {
                             <div className="col-xl-5 col-lg-5 wow fadeInUp" data-wow-duration="1s">
                                 <div className="contact_info_area">
                                     <div className="contact_info">
-                                        <h3>হটলাইন নাম্বার</h3>
-                                        <p>+8801849832178</p>
+                                        <h3>Hotline Number</h3>
+                                        <p>+8801835158205</p>
                                     </div>
                                     <div className="contact_info">
-                                        <h3>ইমেইল এড্রেস</h3>
-                                        <p>info@creativedesign.com.bd</p>{" "}
+                                        <h3>Email Address</h3>
+                                        <p>info@softvasion.com</p>
                                     </div>
                                     <div className="contact_info border-0 p-0 m-0">
-                                        <h3>অফিস এর ঠিকানা</h3>
-                                        <p>অফিস :৩৫/৩/১, নছের মার্কেট,কোনাবাড়ী, গাজিপুর-১৭৪৩,ঢাকা</p>
+                                        <h3>Office Address</h3>
+                                        <p>Office: 35/3/1, Nasir Market, Konabari, Gazipur-1743, Dhaka</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-xl-7 col-lg-7 wow fadeInUp" data-wow-duration="1s">
                                 <form className="contact_form">
-                                    <h3>যোগাযোগ করতে নিচের ফরম পূরণ করুন</h3>
+                                    <h3>Fill out the form below to contact us</h3>
                                     <input
                                         type="hidden"
                                         name="_token"
                                         defaultValue="6GLWhog3f2nVD7jFOGyHSxsN6IsE26YLHl0rpXqG"
-                                    />{" "}
+                                    />
                                     <div className="row">
                                         <div className="col-xl-12">
                                             <div className="contact_form_input">
                                                 <span>
                                                     <i className="fas fa-user" />
                                                 </span>
-                                                <input type="text" name="name" placeholder="আপনার নাম" />
+                                                <input type="text" name="name" placeholder="Your Name" />
                                             </div>
                                         </div>
                                         <div className="col-xl-6">
@@ -45,7 +45,7 @@ export default function contactFrom() {
                                                 <span>
                                                     <i className="fas fa-envelope" />
                                                 </span>
-                                                <input type="email" name="email" placeholder="ইমেইল" />
+                                                <input type="email" name="email" placeholder="Email" />
                                             </div>
                                         </div>
                                         <div className="col-xl-6">
@@ -53,7 +53,7 @@ export default function contactFrom() {
                                                 <span>
                                                     <i className="fas fa-phone-alt" />
                                                 </span>
-                                                <input type="text" name="phone" placeholder="মোবাইল" />
+                                                <input type="text" name="phone" placeholder="Phone" />
                                             </div>
                                         </div>
                                         <div className="col-xl-12">
@@ -61,7 +61,7 @@ export default function contactFrom() {
                                                 <span>
                                                     <i className="fas fa-book" />
                                                 </span>
-                                                <input type="text" name="subject" placeholder="সাবজেক্ট" />
+                                                <input type="text" name="subject" placeholder="Subject" />
                                             </div>
                                         </div>
                                         <div className="col-xl-12">
@@ -72,12 +72,12 @@ export default function contactFrom() {
                                                 <textarea
                                                     rows={5}
                                                     name="message"
-                                                    placeholder="ম্যাসেজ"
+                                                    placeholder="Message"
                                                     defaultValue={""}
                                                 />
                                             </div>
                                             <button className="common_btn mt_15" type="submit">
-                                                সেন্ড ম্যাসেজ
+                                                Send Message
                                             </button>
                                         </div>
                                     </div>
@@ -85,7 +85,7 @@ export default function contactFrom() {
                             </div>
                         </div>
                     </div>
-                    <div className="contact_map_area">
+                    {/* <div className="contact_map_area">
                         <div className="row mt_120 xs_mt_80">
                             <div className="col-12 wow fadeInUp" data-wow-duration="1s">
                                 <div className="contact_map">
@@ -99,10 +99,9 @@ export default function contactFrom() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
-
         </>
     )
 }
