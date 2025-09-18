@@ -71,3 +71,9 @@ export default function page() {
         </>
     )
 }
+
+export function generateMetadata(){
+    return{
+        title:"Softvasion | Terms & Conditions Page"
+    }
+}

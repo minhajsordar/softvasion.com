@@ -1,7 +1,7 @@
 import React from 'react'
 import BlogSection from './_components/blogSection';
 import BradecumSection from './../../components/bradecumSection';
-export default function page() {
+export default function Page() {
   return (
     <>
            <BradecumSection
@@ -13,4 +13,12 @@ export default function page() {
         <BlogSection/>
     </>
   )
+}
+
+
+export function generateMetadata(){
+  return{
+    title:"Softvasion | Blog Page",
+    description:"Softvasion is an IT service provider in Bangladesh. We have all types of IT services. We also have 24 hour customer care service."
+  }
 }
