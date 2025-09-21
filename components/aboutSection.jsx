@@ -7,7 +7,18 @@ export default function aboutSection() {
         {/*==============================
   ABOUT START
     ===============================*/}
-        <section className="about pt_120 xs_pt_80  xs_pb_80">
+        <section className="about pt_120 xs_pt_80  xs_pb_80 relative">
+
+          <div className='absolute top-0 left-0'>
+            <div className='w-18 h-18 bg-orange-100'></div>
+            <div className='flex'>
+              <div className='w-18 h-18 rounded-bl-full bg-purple-100'></div>
+              <div className='w-18 h-18 rounded-tr-full bg-green-100'></div>
+            </div>
+          </div>
+          <div className='absolute top-0 right-0 w-18 h-18 rounded-bl-full bg-blue-100'>
+            <div className='absolute bottom-0 left-0 w-6 h-6 rounded-full bg-green-100'></div>
+          </div>
           <div className="container">
             <div className="row">
               <div className="col-lg-6 wow fadeInLeft" data-wow-duration="1s">
@@ -29,7 +40,7 @@ export default function aboutSection() {
                 </div>
 
               </div>
-              <div className="col-lg-6 wow fadeInRight" data-wow-duration="1s">
+              <div className="col-lg-6 wow fadeInRight relative" data-wow-duration="1s">
                 <div className="section_heading pt_35">
                   <h3>About The Company</h3>
                   <h2>We Have 6 Years of Experience.</h2>
@@ -96,7 +107,7 @@ export default function aboutSection() {
                         Free Consultation
                       </a>
                     </div>
-                    <div className="right">
+                    <div className="right relative">
                       <div className="counter_item">
                         <h4>100%</h4>
                         <p>Success rate</p>

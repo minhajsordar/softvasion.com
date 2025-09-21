@@ -7,7 +7,11 @@ export default function featureSection() {
                 {/*==============================
   FEATURES START
     ===============================*/}
-                <section className="features pt_115 xs_pt_75  xs_pb_80">
+                <section className="features pt_115 xs_pt_75  xs_pb_80 relative">
+
+                    <div className='absolute top-0 right-0 w-18 h-18 bg-green-100'>
+                        <div className='absolute bottom-0 left-0 w-6 h-6 rounded-tr-full bg-blue-200'></div>
+                    </div>
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-8 m-auto">
@@ -23,11 +27,14 @@ export default function featureSection() {
                                 data-wow-duration="1s"
                             >
                                 <div className="feature_item">
-                                    <div className="icon">
+                                    <div className="icon relative bg-transparent">
+                                        <div className='absolute bottom-[40%] left-[40%]'>
+                                            <div className='w-12 h-12 rounded-full bg-green-100'></div>
+                                        </div>
                                         <img
                                             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEga-i_Iajq_ENKPYisfWIxEdSzjXrA5Fx2NJl_3Rs47RHU_yxjovCtABC75fCQFcI2RSyjLHG7IUt9RWV10mBZ29rZw3yUP0_es5RmZUS27eAei3L0C356UCb3DF2ByN-4l2nSkZ__WcfUjwv5osrv9HLC7kSbcug8cFrOD7MMNgCcdD2OhqV9ll02jxC8/s1600/futured_icon_3.png"
                                             alt="icon"
-                                            className="img-fluid w-100"
+                                            className="img-fluid w-100 invert"
                                         />
                                     </div>
                                     <div className="content">
@@ -43,11 +50,14 @@ export default function featureSection() {
                                 data-wow-duration="1s"
                             >
                                 <div className="feature_item">
-                                    <div className="icon">
+                                    <div className="icon relative bg-transparent">
+                                        <div className='absolute bottom-[40%] left-[40%]'>
+                                            <div className='w-12 h-12 rounded-tl-full bg-pink-100'></div>
+                                        </div>
                                         <img
                                             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiL6lkcr3yP710irx86lwH1Y2fPNECL7lB99JVVhwkh3OIDXHhsx0r4oCClVtn4zcSgsFZ-HCls0kVUwQTjP-qxVTzAg73UXkxb3i2GmbRaMKW1k_ci6Zc_l09lRTBi1eMZylujdhPNupzQ3B0ft9PcuWsrLLoeLZ6RyC_F_V4V8iYPBEpqTmvV3eaKY7k/s1600/webdes.png"
                                             alt="icon"
-                                            className="img-fluid w-100"
+                                            className="img-fluid w-100 invert"
                                         />
                                     </div>
                                     <div className="content">
@@ -63,11 +73,14 @@ export default function featureSection() {
                                 data-wow-duration="1s"
                             >
                                 <div className="feature_item">
-                                    <div className="icon">
+                                    <div className="icon relative bg-transparent">
+                                        <div className='absolute bottom-[40%] left-[40%]'>
+                                            <div className='w-12 h-12 rounded-bl-full bg-orange-100'></div>
+                                        </div>
                                         <img
                                             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNELUzwFw4h5d14lYOqn1j3DnWR610WHcNCFoLp5fpbYch3oXff-HhTh5QaUYfYr-_XsuJhUo1Ou2p1SieoI9I1Jlg1v57Ryo1FOHHl9jIoJ-CgddAChAQ9T0kkdhzWAflzPIKpkiUmTS2NO_Triiojic8IWxDunqVFNBKQ7M9-pjD4CpPZjQ9iKXQ2Vw/s1600/web.png"
                                             alt="icon"
-                                            className="img-fluid w-100"
+                                            className="img-fluid w-100 invert"
                                         />
                                     </div>
                                     <div className="content">
@@ -103,11 +116,14 @@ export default function featureSection() {
                                 data-wow-duration="1s"
                             >
                                 <div className="feature_item">
-                                    <div className="icon">
+                                    <div className="icon relative bg-transparent">
+                                        <div className='absolute bottom-[40%] left-[40%]'>
+                                            <div className='w-12 h-12 bg-blue-100'></div>
+                                        </div>
                                         <img
                                             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkoC2nKCS4OzZjI137mb2qvgBoioxpMwlvq-CXGrCz1CL5ZCqoZsuWQj3eeAk2YllWmLh91jBmi5SyMYUvS-ucej2Us3w6SepQs8RO8JyQe_bf3nA1vo_aYG_KugU2tjZNNMSph4MtpfWcBps7RVrmVItTWG_4Of92-b7grnQxk7K1FQA1bNzIGasV5xY/s1600/speed.png"
                                             alt="icon"
-                                            className="img-fluid w-100"
+                                            className="img-fluid w-100 invert"
                                         />
                                     </div>
                                     <div className="content">

@@ -4,7 +4,7 @@ export default function serviceSection() {
     return (
         <>
             <>
-                <section className="services mt-5 xs_mt_80 pt_115 xs_pt_75 pb_95 xs_pb_55">
+                <section className="services xs_mt_80 pt_115 xs_pt_75 pb_95 xs_pb_55">
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-8 m-auto">
@@ -16,7 +16,7 @@ export default function serviceSection() {
                         </div>
                         <div className="row">
                             <div className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
-                                <div className="service_item">
+                                <div className="service_item bg-orange-100">
                                     <span className="icon">
                                         <i className="fas fa-palette" />
                                     </span>
@@ -31,7 +31,7 @@ export default function serviceSection() {
                             </div>
 
                             <div className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
-                                <div className="service_item">
+                                <div className="service_item bg-blue-100">
                                     <span className="icon">
                                         <i className="fas fa-laptop" />
                                     </span>
@@ -57,7 +57,7 @@ export default function serviceSection() {
                             </div> */}
 
                             <div className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
-                                <div className="service_item">
+                                <div className="service_item bg-green-100">
                                     <span className="icon">
                                         <i className="fa fa-server" />
                                     </span>
@@ -70,7 +70,7 @@ export default function serviceSection() {
                             </div>
 
                             <div className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
-                                <div className="service_item">
+                                <div className="service_item bg-pink-100">
                                     <span className="icon">
                                         <i className="fa-brands fa-facebook"/>
                                     </span>

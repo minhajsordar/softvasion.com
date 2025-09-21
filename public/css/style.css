@@ -1285,7 +1285,6 @@ header {
 .achievement_item {
   text-align: center;
   padding: 75px 40px 40px 40px;
-  background: url(../images/achivment.png) no-repeat center/cover;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -1301,7 +1300,6 @@ header {
   content: "";
   width: 100%;
   height: 100%;
-  background: #FFF2F2;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -1318,9 +1316,6 @@ header {
   z-index: -1;
 }
 
-.achievement_item:hover::after {
-  background: rgba(255, 56, 56, 0.7);
-}
 
 .achievement_item .icon {
   display: flex;
@@ -1355,9 +1350,6 @@ header {
   height: 40px;
 }
 
-.achievement_item:hover .icon {
-  background: #ff3838;
-}
 
 .achievement_item h4,
 .achievement_item h4 span {
@@ -1387,14 +1379,7 @@ header {
   -o-transition: all linear 0.3s;
 }
 
-.achievement_item:hover h4,
-.achievement_item:hover h4 span {
-  color: var(--colorWhite);
-}
 
-.achievement_item:hover p {
-  color: var(--colorWhite);
-}
 
 /* achievements end */
 
@@ -1585,7 +1570,6 @@ header {
 }
 
 .service_item {
-  background: var(--colorWhite);
   padding: 30px;
   border-radius: 10px;
   margin-bottom: 25px;
@@ -1679,36 +1663,6 @@ header {
   -o-transform: translateX(-50%);
 }
 
-.service_item a:hover {
-  background: var(--colorWhite);
-  border-color: var(--colorWhite);
-  color: var(--colorBlack);
-}
-
-.service_item:hover {
-  background: #111e37;
-  box-shadow: 0px 4px 20px 0px rgba(255, 33, 33, 0.40);
-  margin-top: -25px;
-  margin-bottom: 0;
-}
-
-.service_item:hover .icon {
-  background: var(--colorWhite);
-  color: #111e37;
-}
-
-.service_item:hover h2,
-.service_item:hover p {
-  color: var(--colorWhite);
-}
-
-.service_item:hover a {
-  bottom: 30px;
-}
-
-.service_item:hover p {
-  margin-bottom: 50px;
-}
 
 /* services end */
 
