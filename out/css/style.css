@@ -1379,14 +1379,7 @@ header {
   -o-transition: all linear 0.3s;
 }
 
-.achievement_item:hover h4,
-.achievement_item:hover h4 span {
-  color: var(--colorWhite);
-}
 
-.achievement_item:hover p {
-  color: var(--colorWhite);
-}
 
 /* achievements end */
 
@@ -1577,7 +1570,6 @@ header {
 }
 
 .service_item {
-  background: var(--colorWhite);
   padding: 30px;
   border-radius: 10px;
   margin-bottom: 25px;
@@ -1671,36 +1663,6 @@ header {
   -o-transform: translateX(-50%);
 }
 
-.service_item a:hover {
-  background: var(--colorWhite);
-  border-color: var(--colorWhite);
-  color: var(--colorBlack);
-}
-
-.service_item:hover {
-  background: #111e37;
-  box-shadow: 0px 4px 20px 0px rgba(255, 33, 33, 0.40);
-  margin-top: -25px;
-  margin-bottom: 0;
-}
-
-.service_item:hover .icon {
-  background: var(--colorWhite);
-  color: #111e37;
-}
-
-.service_item:hover h2,
-.service_item:hover p {
-  color: var(--colorWhite);
-}
-
-.service_item:hover a {
-  bottom: 30px;
-}
-
-.service_item:hover p {
-  margin-bottom: 50px;
-}
 
 /* services end */
 
@@ -3022,8 +2984,7 @@ footer::after {
 }
 
 .home_2_single_team {
-  padding: 75px 40px 40px 40px;
-  background: var(--colorWhite);
+  padding: 0px 25px 30px 30px;
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.07);
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -3033,7 +2994,7 @@ footer::after {
   position: relative;
   margin: 0 15px;
   margin-top: 50px;
-  margin-bottom: 60px;
+  
 }
 
 .home_2_single_team span {
@@ -3051,10 +3012,13 @@ footer::after {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
-  position: absolute;
+   position: absolute;
   left: 45px;
-  top: 0;
+  top: 0; 
   z-index: 100;
+}
+.home_2_single_team span img{
+  background-color: #000000;
 }
 
 .home_2_single_team .item_bottom {
@@ -4283,12 +4247,12 @@ footer::after {
 =============================*/
 .single_pricing {
   border-radius: 15px;
-  background: var(--colorBlack);
+  background: #1a5b6e;
   padding: 40px;
   position: relative;
   margin-top: 25px;
   overflow: hidden;
-  box-shadow: rgb(0 0 0 / 0%) 0px 1px 3px 0px, rgb(27 31 35 / 7%) 0px 0px 0px 1px;
+  /* box-shadow: rgb(0 0 0 / 0%) 0px 1px 3px 0px, rgb(27 31 35 / 7%) 0px 0px 0px 1px; */
   z-index: 1;
   transition: all linear .3s;
   -webkit-transition: all linear .3s;
@@ -4300,7 +4264,7 @@ footer::after {
 .single_pricing::after {
   position: absolute;
   content: "";
-  background: url(../images/pricing_bg.png);
+  /* background: url(../images/pricing_bg.png); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4326,7 +4290,7 @@ footer::after {
   font-weight: 700;
   line-height: 50px;
   color: var(--colorWhite);
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .single_pricing h2 span {
@@ -4336,7 +4300,7 @@ footer::after {
 .single_pricing ul li {
   font-size: 16px;
   font-weight: 400;
-  color: var(--colorBlack);
+  color: white;
   position: relative;
   padding-left: 30px;
   margin-top: 20px;
@@ -4347,7 +4311,7 @@ footer::after {
   content: "\f058";
   font-family: "font awesome 5 free";
   font-size: 20px;
-  color: var(--colorBlack);
+  color: white;
   top: -3px;
   left: 0;
 }
@@ -4362,10 +4326,10 @@ footer::after {
 }
 
 .single_pricing a {
-  background: var(--colorBlack);
+  background: white;
   width: 100%;
   margin-top: 30px;
-  color: var(--colorWhite);
+  color:#111e37;
   text-align: center;
   font-family: var(--headingFont);
   font-size: 16px;
@@ -4385,14 +4349,17 @@ footer::after {
   -o-transition: all linear .3s;
 }
 
-.single_pricing:hover,
-.single_pricing:hover a {
-  background: #111e37;
+.single_pricing:hover {
+  background: #1e335a;
+}
+.single_pricing:hover a{
+  background-color: white;
+  color: #111e37;
 }
 
 .single_pricing.active,
 .single_pricing.active a {
-  background: #111e37;
+  background: #ff4410;
 }
 
 /*==============================
