@@ -102,7 +102,7 @@ export default function aboutSection() {
                       </ul>
                       <a
                         className="common_btn"
-                        href="https://www.creativedesign.com.bd/gate-a-quote"
+                        href="/"
                       >
                         Free Consultation
                       </a>
