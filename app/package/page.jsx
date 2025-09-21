@@ -1,5 +1,5 @@
 import React from 'react'
-import Product from './_components/product'
+import Package from './_components/package'
 import BradecumSection from './../../components/bradecumSection';
 
 export default function page() {
@@ -7,10 +7,11 @@ export default function page() {
         <>
             <BradecumSection
                 images="/assets/image/image6.jpg"
-                title="Shop"
+                title="Package"
                 subtitle="Home"
+                title2='Package'
             />
-            /<Product />
+            /<Package />
 
         </>
     )
