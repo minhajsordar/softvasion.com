@@ -4,14 +4,14 @@ import Link from 'next/link'
 export default function footerSection() {
     return (
         <>
-            <footer className="pt_100 xs_pt_80">
+            <footer className="pt_100 xs_pt_80 bg-gradient-to-r from-blue-50 to-blue-100 ">
                 <div className="container">
                     <div className="row pb_55">
                         <div className="col-lg-4 col-sm-12">
                             <div className="footer_contact">
                                 <h4>Our Email</h4>
                                 <p>
-                                    <Link href="mailto:info@softvasion.com">
+                                    <Link className='text-black' href="mailto:info@softvasion.com">
                                         info@softvasion.com
                                     </Link>
                                 </p>
@@ -21,7 +21,7 @@ export default function footerSection() {
                             <div className="footer_contact">
                                 <h4>Our Hotline</h4>
                                 <p>
-                                    <Link href="callto:+8801835158205">+8801835158205</Link>
+                                    <Link className='text-black' href="callto:+8801835158205">+8801835158205</Link>
                                 </p>
                             </div>
                         </div>
@@ -64,33 +64,33 @@ export default function footerSection() {
                                 <div className="footer_content xs_mb_50">
                                     <div className="footer_logo" href="https://www.softvson.com.bd">
                                         <Link className="navbar-brand text-center" href="/">
-                                            <h2 className="text-white orbitron-700">SoftVasion</h2>
+                                            {/* <h2 className="text-white orbitron-700">SoftVasion</h2> */}
+                                            <img src="/assets/image/softvasion.svg" alt="" />
                                         </Link>
                                     </div>
-                                    <p className="footer_description pt_40 sm_pt_20 sm_pb_20">
+                                    <p className="footer_description pt_40 sm_pt_20 sm_pb_20 text-black">
                                         SoftVasion is an IT service provider in Bangladesh. We offer all kinds of IT services and also provide 24-hour customer care service.
                                     </p>
                                 </div>
                             </div>
                             <div className="col-xl-2 col-lg-2 col-sm-6 col-md-6 xs_mb_50">
                                 <div className="footer_content">
-                                    <h3>Links</h3>
+                                    <h3 className='text-black'>Links</h3>
                                     <ul className="footer_link">
                                         <li>
+                                            <Link href="/about">About Us</Link>
+                                        </li>
+                                        {/* <li>
                                             <Link href="/package">
                                                 Package List
                                             </Link>
-                                        </li>
+                                        </li> */}
                                         {/* <li>
                                             <Link href="/team">
                                                 Our Team
                                             </Link>
                                         </li> */}
-                                        <li>
-                                            <Link href="/blog">
-                                                Latest Blog
-                                            </Link>
-                                        </li>
+
                                         {/* <li>
                                             <Link href="/faq">FAQ</Link>
                                         </li> */}
@@ -99,6 +99,9 @@ export default function footerSection() {
                                                 Contact Us
                                             </Link>
                                         </li>
+                                        <li>
+                                            <Link href="/service">Our Services</Link>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -106,9 +109,9 @@ export default function footerSection() {
                                 <div className="footer_content">
                                     <h3>Links</h3>
                                     <ul className="footer_link">
-                                        <li>
+                                        {/* <li>
                                             <Link href="/about">About Us</Link>
-                                        </li>
+                                        </li> */}
                                         <li>
                                             <Link href="/Privecy-&-Policy">Privacy & Policy</Link>
                                         </li>
@@ -116,8 +119,11 @@ export default function footerSection() {
                                             <Link href="/Trams-&-Conditions">Terms & Conditions</Link>
                                         </li>
                                         <li>
-                                            <Link href="/service">Our Services</Link>
+                                            <Link href="/blog">
+                                                Latest Blog
+                                            </Link>
                                         </li>
+
                                         {/* <li>
                                             <Link href="/portfolio">Projects</Link>
                                         </li> */}
@@ -143,6 +149,7 @@ export default function footerSection() {
                                             <input
                                                 type="email"
                                                 name="email"
+                                                className='!border-none focus:outline-none'
                                                 placeholder="Enter your email...."
                                             />
                                             <span>
@@ -159,7 +166,7 @@ export default function footerSection() {
                     </div>
                     <div className="footer_bottom pt_45 pb_45 xs_pb_25">
                         <div className="row">
-                            <div className="col-xl-6 col-lg-5">
+                            <div className="col-xl-6 col-lg-5 m-auto">
                                 <div className="copy">
                                     <p>© All rights reserved SoftVasion&nbsp;</p>
                                 </div>
@@ -167,7 +174,7 @@ export default function footerSection() {
                             <div className="col-xl-6 col-lg-7">
                                 <div className="footer_right_bottom">
                                     <div className="payment ml_30 xs_ml_0">
-                                        <p>Payment via:</p>
+                                        <p className='text-black'>Payment via:</p>
                                         <div>
                                             <Link href="#">
                                                 <img
