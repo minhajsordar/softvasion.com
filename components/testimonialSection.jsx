@@ -16,17 +16,17 @@ export default function testimonialSection() {
                         </div>
                     </div>
                     <div className="row home_2_team_slider">
-                        <TestimonialMember description="We are very impressed with every aspect of our new website. We had it created by Creative Design, thank you." name="Fatema Akter" title="Entrepreneur" image="/assets/image/femail.png" color="#ffedd4" />
+                        <TestimonialMember description="We are very impressed with every aspect of our new website. We had it created by Creative Design, thank you." name="Fatema Akter" title="Entrepreneur" image="/assets/image/femail.png" color="#fff7ed" />
 
-                        <TestimonialMember description="I am very happy to work with Creative Design. They are very friendly and completed my project beautifully. Thank you Creative Design." name="Khaled Mahmud" title="Manager" image="/assets/image/mail.png" color="#dbeafe" />
+                        <TestimonialMember description="I am very happy to work with Creative Design. They are very friendly and completed my project beautifully. Thank you Creative Design." name="Khaled Mahmud" title="Manager" image="/assets/image/mail.png" color="#eff6ff" />
 
-                        <TestimonialMember description="I created my new PTC site with Creative Design and got exactly what I wanted. It was great, thanks to Creative Design." name="Akbar Hossain" title="CEO" image="/assets/image/mail.png" color="#dbfce7" />
+                        <TestimonialMember description="I created my new PTC site with Creative Design and got exactly what I wanted. It was great, thanks to Creative Design." name="Akbar Hossain" title="CEO" image="/assets/image/mail.png" color="#f0fdf4" />
 
-                        <TestimonialMember description="I took SEO services for my website from them. After getting the service, my website traffic has increased significantly." name="Najmul Hasan" title="Executive Director" image="/assets/image/mail.png" color="#cefafe" />
+                        <TestimonialMember description="I took SEO services for my website from them. After getting the service, my website traffic has increased significantly." name="Najmul Hasan" title="Executive Director" image="/assets/image/mail.png" color="#fdf2f8" />
 
-                        <TestimonialMember description="Their work is amazing. Recently I had an e-commerce website created by Creative Design. Thanks to Creative Design." name="Nasir Sheikh" title="CEO" image="/assets/image/mail.png" color="#ecfcca" />
+                        <TestimonialMember description="Their work is amazing. Recently I had an e-commerce website created by Creative Design. Thanks to Creative Design." name="Nasir Sheikh" title="CEO" image="/assets/image/mail.png" color="#fefce8" />
 
-                        <TestimonialMember description="I am very happy to work with Creative Design. They are very helpful and their customer support is excellent." name="Zia Hasan" title="Co-CEO" image="/assets/image/mail.png" color="#fce7f3" />
+                        <TestimonialMember description="I am very happy to work with Creative Design. They are very helpful and their customer support is excellent." name="Zia Hasan" title="Co-CEO" image="/assets/image/mail.png" color="#f5f3ff" />
                     </div>
                 </div>
             </section>

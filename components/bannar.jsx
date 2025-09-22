@@ -5,7 +5,7 @@ export default function Bannar() {
     return (
         <>
             {/* ====== Banner Section ====== */}
-            <section className="banner py-5">
+            <section className="banner !pb-0 pt-5">
                 <div className="container">
                     <div className="">
                         <div
@@ -39,18 +39,18 @@ export default function Bannar() {
                                         <img
                                             src="/assets/image/image4.png"
                                             alt="talent"
-                                            className="img-fluid rounded-tr-[150px] shadow  !h-[260px]"
+                                            className="img-fluid rounded-tr-[150px]  !h-[260px]"
                                         />
                                     </div>
                                     <div className="">
-                                        <div className="flex flex-col item-center justify-end p-2 text-center rounded-tr-[150px]  shadow items-center w-100 !h-[200px]" style={{ backgroundColor: "#E0F2FE" }}>
+                                        <div className="flex flex-col item-center justify-end p-2 text-center rounded-tr-[150px]  items-center w-100 !h-[200px]" style={{ backgroundColor: "#E0F2FE" }}>
                                             <h6 className="mb-2">Customer</h6>
                                             <h3 className="fw-bold">300+</h3>
                                         </div>
                                     </div>
 
                                     <div className="">
-                                        <div className="flex flex-col item-center justify-end p-2 text-center rounded-tl-[150px] shadow items-center w-100 !h-[150px]" style={{ backgroundColor: "#FCE7F3" }}>
+                                        <div className="flex flex-col item-center justify-end p-2 text-center rounded-tl-[150px] items-center w-100 !h-[150px]" style={{ backgroundColor: "#FCE7F3" }}>
                                             <h6 className="mb-2">Projects</h6>
                                             <h3 className="fw-bold">500+</h3>
                                         </div>
@@ -59,7 +59,7 @@ export default function Bannar() {
                                         <img
                                             src="/assets/image/image3.png"
                                             alt="project"
-                                            className="img-fluid rounded-tr-[150px] shadow !h-[150px]"
+                                            className="img-fluid rounded-tr-[150px] !h-[150px]"
                                         />
                                     </div>
 
@@ -67,11 +67,11 @@ export default function Bannar() {
                                         <img
                                             src="/assets/image/image6.jpg"
                                             alt="experience"
-                                            className="img-fluid rounded-tl-[150px] shadow !h-[200px]"
+                                            className="img-fluid rounded-tl-[150px] !h-[200px]"
                                         />
                                     </div>
                                     <div className="">
-                                        <div className="flex flex-col item-center justify-end p-2 text-center rounded-tl-[150px]  shadow items-center w-100 !h-[250px] " style={{ backgroundColor: "#DCFCE7" }}>
+                                        <div className="flex flex-col item-center justify-end p-2 text-center rounded-tl-[150px]  items-center w-100 !h-[250px] " style={{ backgroundColor: "#DCFCE7" }}>
                                             <h6 className="mb-2">Team</h6>
                                             <h3 className="fw-bold">50+</h3>
                                         </div>

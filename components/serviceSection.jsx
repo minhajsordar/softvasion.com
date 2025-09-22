@@ -15,117 +15,58 @@ export default function serviceSection() {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
-                                <div className="service_item bg-orange-100">
-                                    <span className="icon">
-                                        <i className="fas fa-palette" />
-                                    </span>
-                                    <h2>Web Design & Development</h2>
-                                    <p>
-                                        Our web design & <span style={{ color: "rgb(33, 37, 41)", backgroundColor: "rgba(0, 0, 0, 0.05)" }}>development</span> packages start from 8,000 BDT
-                                    </p>
-                                    <a href="https://www.creativedesign.com.bd/service/%E0%A6%93%E0%A7%9F%E0%A7%87%E0%A6%AC-%E0%A6%A1%E0%A6%BF%E0%A6%9C%E0%A6%BE%E0%A6%87%E0%A6%A8-%E0%A6%93-%E0%A6%A1%E0%A7%87%E0%A6%AD%E0%A7%87%E0%A6%B2%E0%A6%AA%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F">
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div>
 
-                            <div className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
-                                <div className="service_item bg-blue-100">
-                                    <span className="icon">
-                                        <i className="fas fa-laptop" />
-                                    </span>
-                                    <h2>Software Development</h2>
-                                    <p>Our software development packages start from 10,000 BDT</p>
-                                    <a href="https://www.creativedesign.com.bd/service/%E0%A6%B8%E0%A6%AB%E0%A6%9F%E0%A6%93%E0%A6%AF%E0%A6%BC%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B0-%E0%A6%A1%E0%A7%87%E0%A6%AD%E0%A7%87%E0%A6%B2%E0%A6%AA%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F">
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div>
+                            <ServiceCard icon='fas fa-palette' number='01' title='Web Design & Development' description='Our web design & development packages start from 8,000 BDT' numberColor='!text-orange-950' buttonColor='!bg-orange-950' bgColor='!bg-orange-50' iconBg='bg-orange-200 rounded-tr-full'/>
 
-                            {/* <div className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
-                                <div className="service_item">
-                                    <span className="icon">
-                                        <i className="far fa-code" />
-                                    </span>
-                                    <h2>SEO Services</h2>
-                                    <p>Our SEO service packages start from 3,000 BDT</p>
-                                    <a href="https://www.creativedesign.com.bd/service/%E0%A6%8F%E0%A6%B8%E0%A6%87%E0%A6%93-%E0%A6%8F%E0%A6%B0-%E0%A6%B8%E0%A6%95%E0%A6%B2-%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AD%E0%A6%BF%E0%A6%B8">
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div> */}
+                            <ServiceCard icon='fas fa-laptop' number='02' title='Software Development' description='Our software development packages start from 10,000 BDT' numberColor='!text-blue-950' buttonColor='!bg-blue-950' bgColor='bg-blue-50' iconBg='bg-blue-200 rounded-b-full'/>
 
-                            <div className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
-                                <div className="service_item bg-green-100">
-                                    <span className="icon">
-                                        <i className="fa fa-server" />
-                                    </span>
-                                    <h2>Domain, Hosting & Server</h2>
-                                    <p>Our domain and hosting packages start from 3,000 BDT</p>
-                                    <a href="https://www.creativedesign.com.bd/service/%E0%A6%A1%E0%A7%8B%E0%A6%AE%E0%A7%87%E0%A6%A8,-%E0%A6%B9%E0%A7%8B%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A6%BF%E0%A6%82-%E0%A6%93-%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AD%E0%A6%BE%E0%A6%B0">
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div>
+                            <ServiceCard icon='fa fa-server' number='03' title='Domain, Hosting & Server' description='Our domain and hosting packages start from 3,000 BDT' numberColor='!text-green-950' buttonColor='!bg-green-900' bgColor='bg-green-50' iconBg='bg-green-200 rounded-l-full'/>
 
-                            <div className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
-                                <div className="service_item bg-pink-100">
-                                    <span className="icon">
-                                        <i className="fa-brands fa-facebook"/>
-                                    </span>
-                                    <h2>Social Media Marketing</h2>
-                                    <p>Our social media marketing packages start from 2,000 BDT</p>
-                                    <a href="https://www.creativedesign.com.bd/service/%E0%A6%B8%E0%A7%8B%E0%A6%B6%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2-%E0%A6%AE%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A7%9F%E0%A6%BE-%E0%A6%AE%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A7%87%E0%A6%9F%E0%A6%BF%E0%A6%82">
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div>
+                            <ServiceCard icon='fa-brands fa-facebook' number='04' title='Social Media Marketing' description='Our social media marketing packages start from 2,000 BDT' numberColor='!text-pink-950' buttonColor='!bg-pink-950' bgColor='bg-pink-50' iconBg='bg-pink-200 rounded-r-full'/>
 
-                            {/* <div className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
-                                <div className="service_item">
-                                    <span className="icon">
-                                        <i className="far fa-code" />
-                                    </span>
-                                    <h2>Graphic Design Services</h2>
-                                    <p>Our graphic design packages start from 5,000 BDT</p>
-                                    <a href="https://www.creativedesign.com.bd/service/%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AB%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B8-%E0%A6%A1%E0%A6%BF%E0%A6%9C%E0%A6%BE%E0%A6%87%E0%A6%A8-%E0%A6%8F%E0%A6%B0-%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AD%E0%A6%BF%E0%A6%B8">
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div> */}
-
-                            {/* <div className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
-                                <div className="service_item">
-                                    <span className="icon">
-                                        <i className="far fa-code" />
-                                    </span>
-                                    <h2>UI/UX Design Services</h2>
-                                    <p>Our UI/UX design service packages start from 1,000 BDT</p>
-                                    <a href="https://www.creativedesign.com.bd/service/UIUX-%E0%A6%A1%E0%A6%BF%E0%A6%9C%E0%A6%BE%E0%A6%87%E0%A6%A8-%E0%A6%8F%E0%A6%B0-%E0%A6%B8%E0%A6%BE%E0%A6%B0%E0%A7%8D%E0%A6%AD%E0%A6%BF%E0%A6%B8">
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div> */}
-
-                            {/* <div className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp" data-wow-duration="1s">
-                                <div className="service_item">
-                                    <span className="icon">
-                                        <i className="far fa-code" />
-                                    </span>
-                                    <h2>Product Branding & Design</h2>
-                                    <p>Our product branding & design packages start from 8,000 BDT</p>
-                                    <a href="https://www.creativedesign.com.bd/service/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A7%8B%E0%A6%A1%E0%A6%BE%E0%A6%95%E0%A7%8D%E0%A6%9F-%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%A1%E0%A6%BF%E0%A6%82-%E0%A6%93-%E0%A6%A1%E0%A6%BF%E0%A6%9C%E0%A6%BE%E0%A6%87%E0%A6%A8">
-                                        Learn More
-                                    </a>
-                                </div>
-                            </div> */}
                         </div>
                     </div>
                 </section>
 
 
             </>
+
+        </>
+    )
+}
+
+
+
+export const ServiceCard = (props) => {
+    return (
+        <>
+
+
+            <div className="col-xl-3 col-md-6 col-lg-4 wow fadeInUp py-3" data-wow-duration="1s">
+                <div className={`${props.bgColor} p-3  rounded-4xl`}>
+                    <div className='flex justify-between py-4 px-3'>
+                        <div className='!text-3xl text-black relative'>
+                            <div className='absolute  left-[16px] top-[-15px] z-0'>
+                                <div className={`w-10 h-10  ${props.iconBg}`}></div>
+                            </div>
+                            <div className='absolute z-10'>
+                            <i className={props.icon} />
+                            </div>
+                        </div>
+                        <div><h1 className={`!text-[120px] ${props.numberColor} !mr-[-24px]`}>{props.number}</h1></div>
+                    </div>
+                    <div className='p-3'>
+                        <h2 className='!text-left !text-2xl !font-bold py-1'>{props.title}</h2>
+                        <p className='py-1 !text-[14px]'>{props.description}</p>
+                        <div className='pt-3'>
+                            <a className={`p-2 px-4 rounded-3xl ${props.buttonColor}`} href="/">
+                                <span className='!text-amber-50'>Learn More</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
         </>
     )

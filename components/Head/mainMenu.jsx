@@ -13,8 +13,9 @@ export function MainMenu() {
         <>
             <nav className="navbar navbar-expand-lg main_menu">
                 <div className="container">
-                    <Link className="navbar-brand text-center" href="/">
-                        <h2 className="text-blue orbitron-700">SoftVasion</h2>
+                    <Link className="navbar-brand text-center !w-[200px] !h-[40px]" href="/">
+                        {/* <h2 className="text-blue orbitron-700">SoftVasion</h2> */}
+                        <img className="!w-[250px] !h-[40px]" src="/assets/image/softvasion.svg" alt="" />
                     </Link>
 
                     {/* Mobile toggle button */}
