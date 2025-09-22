@@ -2066,7 +2066,7 @@ footer::after {
 }
 
 .footer_contact p a {
-  color: black
+  color: black;
   font-size: 18px;
   line-height: 36px;
   font-weight: 600;
