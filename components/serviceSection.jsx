@@ -6,7 +6,7 @@ export default function serviceSection() {
             <>
                 <section className="services xs_mt_80 pt_115 xs_pt_75 pb_95 xs_pb_55 relative">
                     <div className='absolute bottom-0 right-[-20px] !z-0'>
-                        <div className='!w-100 !h-100 rounded-full !p-10 border-orange-950/50 border-[50px] flex justify-center items-center '>
+                        <div className='!w-100 !h-100 rounded-full !p-10 border-green-200/10 border-[50px] flex justify-center items-center '>
                             
                         </div>
                       
