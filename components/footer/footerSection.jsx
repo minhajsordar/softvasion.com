@@ -78,7 +78,7 @@ export default function footerSection() {
                                     <h3 className='text-black'>Links</h3>
                                     <ul className="footer_link">
                                         <li>
-                                            <Link href="/about">About Us</Link>
+                                            <Link href="/about.html">About Us</Link>
                                         </li>
                                         {/* <li>
                                             <Link href="/package">
@@ -95,12 +95,12 @@ export default function footerSection() {
                                             <Link href="/faq">FAQ</Link>
                                         </li> */}
                                         <li>
-                                            <Link href="/contactus">
+                                            <Link href="/contactus.html">
                                                 Contact Us
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/service">Our Services</Link>
+                                            <Link href="/service.html">Our Services</Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -113,13 +113,13 @@ export default function footerSection() {
                                             <Link href="/about">About Us</Link>
                                         </li> */}
                                         <li>
-                                            <Link href="/Privecy-&-Policy">Privacy & Policy</Link>
+                                            <Link href="/privecy-and-Policy.html">Privacy & Policy</Link>
                                         </li>
                                         <li>
-                                            <Link href="/Trams-&-Conditions">Terms & Conditions</Link>
+                                            <Link href="/trams-and-Conditions.html">Terms & Conditions</Link>
                                         </li>
                                         <li>
-                                            <Link href="/blog">
+                                            <Link href="/blog.html">
                                                 Latest Blog
                                             </Link>
                                         </li>
@@ -149,7 +149,7 @@ export default function footerSection() {
                                             <input
                                                 type="email"
                                                 name="email"
-                                                className='!border-none focus:outline-none'
+                                                className='!border-none focus:outline-none !font-serif'
                                                 placeholder="Enter your email...."
                                             />
                                             <span>
