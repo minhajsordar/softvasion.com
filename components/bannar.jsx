@@ -5,7 +5,7 @@ export default function Bannar() {
     return (
         <>
             {/* ====== Banner Section ====== */}
-            <section className="banner !pb-0 pt-5">
+            <section className="banner !pb-0 ">
                 <div className="container">
                     <div className="">
                         <div
@@ -63,18 +63,19 @@ export default function Bannar() {
                                         />
                                     </div>
 
+
+                                    <div className="">
+                                        <div className="flex flex-col item-center justify-end p-2 text-center rounded-tl-[150px]  items-center w-100 !h-[200px] " style={{ backgroundColor: "#DCFCE7" }}>
+                                            <h6 className="mb-2">Team</h6>
+                                            <h3 className="fw-bold">50+</h3>
+                                        </div>
+                                    </div>
                                     <div className="">
                                         <img
                                             src="/assets/image/image6.jpg"
                                             alt="experience"
-                                            className="img-fluid rounded-tl-[150px] !h-[200px]"
+                                            className="img-fluid rounded-tl-[150px] !h-[250px]"
                                         />
-                                    </div>
-                                    <div className="">
-                                        <div className="flex flex-col item-center justify-end p-2 text-center rounded-tl-[150px]  items-center w-100 !h-[250px] " style={{ backgroundColor: "#DCFCE7" }}>
-                                            <h6 className="mb-2">Team</h6>
-                                            <h3 className="fw-bold">50+</h3>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
