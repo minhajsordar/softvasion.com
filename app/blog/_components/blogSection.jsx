@@ -6,17 +6,17 @@ export default function blogSection() {
         {
             Image: '/assets/image/image6.jpg',
             date: '15 Jan, 2025',
-            title: 'Creative Agency...',
+            title: 'SoftVasion Top Web Agency in Bangladesh',
             description: 'Are you a busy entrepreneur? Do you want your b...',
             link: '/blog'
         },
-        {
-            Image: '/assets/image/image6.jpg',
-            date: '15 Jan, 2025',
-            title: 'Creative Agency...',
-            description: 'Are you a busy entrepreneur? Do you want your b...',
-            link: '/blog'
-        }
+        // {
+        //     Image: '/assets/image/image6.jpg',
+        //     date: '15 Jan, 2025',
+        //     title: 'Creative Agency...',
+        //     description: 'Are you a busy entrepreneur? Do you want your b...',
+        //     link: '/blog'
+        // }
     ]
     return (
         <>

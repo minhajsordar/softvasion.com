@@ -20,7 +20,7 @@ export default function Bannar() {
                                     Top Software Company in Bangladesh for Brands
                                 </p>
                                 <div className="banner_btn d-flex flex-wrap justify-center">
-                                    <Link href="/contactus" className="common_btn btn btn-primary me-3">
+                                    <Link href="/contactus.html" className="common_btn btn btn-primary me-3">
                                         Get In Touch
                                     </Link>
                                 </div>
