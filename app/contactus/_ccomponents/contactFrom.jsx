@@ -19,7 +19,7 @@ export default function ContactForm() {
                                     </div>
                                     <div className="contact_info border-0 p-0 m-0">
                                         <h3>Office Address</h3>
-                                        <p>Office: 35/3/1, Nasir Market, Konabari, Gazipur-1743, Dhaka</p>
+                                        <p>Shirin’s, House: 450/A, Road: 06/A, DOHS, Mirpur, Dhaka-1216, Bangladesh,</p>
                                     </div>
                                 </div>
                             </div>

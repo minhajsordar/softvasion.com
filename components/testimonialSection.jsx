@@ -3,10 +3,16 @@ export default function testimonialSection() {
     return (
         <>
             <section
-                className="home_2_testimonial pt_115 xs_pt_75 pb_120 xs_pb_80"
+                className="home_2_testimonial pt_115 xs_pt_75 pb_120 xs_pb_80 relative"
                 style={{ background: "" }}
             >
-                <div className="container">
+                <div className='absolute bottom-0 left-0'>
+                    <div className='w-9 h-9 rounded-br-full bg-green-100'></div>
+                    <div className='w-12 h-12 rounded-br-full bg-blue-100'></div>
+                    <div className='w-15 h-15 rounded-br-full bg-orange-100'></div>
+                </div>
+                <div className="container relative">
+
                     <div className="row">
                         <div className="col-xl-8 m-auto">
                             <div className="section_heading">
@@ -41,7 +47,7 @@ export function TestimonialMember(props) {
     return (
         <>
             <div className="col-lg-4 wow fadeInUp" data-wow-duration="1s">
-                <div className="my-3 p-4 rounded-4xl " style={{background:props.color}}> 
+                <div className="my-3 p-4 rounded-4xl " style={{ background: props.color }}>
                     <div>
                         <img className='!w-[90px] !h-[90px]' src={props.image} alt="" />
                     </div>
@@ -55,11 +61,11 @@ export function TestimonialMember(props) {
                         </div>
                         <div className='col-4 '>
                             <div className='flex text-orange-500'>
-                            <li><i className="fas fa-star" /></li>
-                            <li><i className="fas fa-star" /></li>
-                            <li><i className="fas fa-star" /></li>
-                            <li><i className="fas fa-star" /></li>
-                            <li><i className="fas fa-star" /></li>
+                                <li><i className="fas fa-star" /></li>
+                                <li><i className="fas fa-star" /></li>
+                                <li><i className="fas fa-star" /></li>
+                                <li><i className="fas fa-star" /></li>
+                                <li><i className="fas fa-star" /></li>
                             </div>
                         </div>
                     </div>
