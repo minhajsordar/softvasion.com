@@ -74,7 +74,7 @@ export default function Page() {
 
 export function  generateMetadata(){
     return{
-        title:"Softvasion | Privecy-Policy",
+        title:"SoftVasion | Privecy-Policy",
         description:"Softvasion is an IT service provider in Bangladesh. We have all types of IT services. We also have 24 hour customer care service."
     }
 }
