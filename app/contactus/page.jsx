@@ -13,7 +13,7 @@ export default function page() {
 
 export function generateMetadata (){
   return{
-    title:"Softvasion | Contactus Page",
+    title:"SoftVasion | Contactus Page",
     description:"Softvasion is an IT service provider in Bangladesh. We have all types of IT services. We also have 24 hour customer care service."
   }
 }

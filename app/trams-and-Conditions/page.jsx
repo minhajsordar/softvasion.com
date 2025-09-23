@@ -74,6 +74,6 @@ export default function page() {
 
 export function generateMetadata(){
     return{
-        title:"Softvasion | Terms & Conditions Page"
+        title:"SoftVasion | Terms & Conditions Page"
     }
 }

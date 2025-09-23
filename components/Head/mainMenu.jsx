@@ -1,14 +1,28 @@
 "use client"
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect,useRef } from "react";
 
 export function MainMenu() {
 
     const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
 
-   
+    const containerRef = useRef(null)
+    // const [filterOpen, setFilterOpen] = useState(false)
+
+    const handleClickOutside = (event) => {
+        if (containerRef.current && !containerRef.current.contains(event.target)) {
+            setIsOpen(false)
+        }
+    }
+    useEffect(() => {
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
+
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
@@ -22,9 +36,9 @@ export function MainMenu() {
     }
     return (
         <>
-            <nav className="navbar navbar-expand-lg main_menu">
+            <nav className="navbar navbar-expand-lg main_menu" >
                 <div className="container">
-                    <div className="row w-100 flex-nowrap justify-between items-center">
+                    <div className="row w-100 flex-nowrap justify-between items-center" ref={containerRef}>
                         <div className="col-6 col-md-3">
                             <Link className="navbar-brand text-center !w-[200px] !h-[40px]" href="/">
                                 {/* <h2 className="text-blue orbitron-700">SoftVasion</h2> */}
@@ -39,10 +53,10 @@ export function MainMenu() {
                                     <Link className={isActive("/")} href="/">Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={isActive("/about")} href="/about">About Us</Link>
+                                    <Link className={isActive("/about.html")} href="/about.html">About Us</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className={isActive("/service")} href="/service">Services</Link>
+                                    <Link className={isActive("/service.html")} href="/service.html">Services</Link>
                                 </li>
                                 {/* <li className="nav-item">
                                 <Link className={isActive("/products")} href="/products">Products</Link>
@@ -66,7 +80,7 @@ export function MainMenu() {
                                 </ul>
                             </li> */}
                                 <li className="nav-item">
-                                    <Link className={isActive("/contactus")} href="/contactus">Contact</Link>
+                                    <Link className={isActive("/contactus.html")} href="/contactus.html">Contact</Link>
                                 </li>
                             </ul>
 
@@ -77,9 +91,9 @@ export function MainMenu() {
                         </ul> */}
                         </div>
                         <div className="col-2 !text-end lg:hidden">
-                            <button onClick={toggleMenu}>
+                            <button onClick={toggleMenu} >
                                 <img
-                                    src="/assets/image/menus.png"
+                                    src="/assets/image/menus.svg"
                                     alt="menu icon"
                                     className="!w-8 !h-8"
                                 />
@@ -87,20 +101,20 @@ export function MainMenu() {
                         </div>
 
                     </div>
-                    <div className={`col-12 !h-[50vh] !mt-6 bg-amber-50  ${isOpen ? "block" : "hidden"}`}>
+                    <div className={`col-12 !w-full !mt-6 bg-white  ${isOpen ? "block" : "hidden"}`} >
                         <ul className="!flex !flex-col !items-center !gap-5 !py-10 justify-center font-serif !font-semibold text-[#00156a] transform transition-transform duration-300 ease-in-out">
                             <li className="">
                                 <Link className={isActive("/")} href="/">Home</Link>
                             </li>
                             <li className="">
-                                <Link className={isActive("/about")} href="/about">About Us</Link>
+                                <Link className={isActive("/about.html")} href="/about.html">About Us</Link>
                             </li>
                             <li className="">
-                                <Link className={isActive("/service")} href="/service">Services</Link>
+                                <Link className={isActive("/service.html")} href="/service.html">Services</Link>
                             </li>
 
                             <li className="">
-                                <Link className={isActive("/contactus")} href="/contactus">Contact</Link>
+                                <Link className={isActive("/contactus.html")} href="/contactus.html">Contact</Link>
                             </li>
                         </ul>
                     </div>
