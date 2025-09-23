@@ -22,13 +22,13 @@ export default function serviceSection() {
                         </div>
                         <div className="row">
 
-                            <ServiceCard icon='fas fa-palette' number='01' title='Web Design & Development' description='Our web design & development packages start from 8,000 BDT' numberColor='!text-orange-950' buttonColor='!bg-orange-950' bgColor='!bg-orange-50' iconBg='bg-orange-200 rounded-tr-full' borderColor='border-orange-950/20' />
+                            <ServiceCard icon='fas fa-palette' number='01' title='Web Design & Development' description='Our web design & development packages start from 8,000 BDT' numberColor='!text-orange-950' buttonColor='!bg-orange-950' bgColor='!bg-orange-50' iconBg='bg-orange-200 rounded-tr-full' borderColor='border-orange-950/5' />
 
-                            <ServiceCard icon='fas fa-laptop' number='02' title='Software Development' description='Our software development packages start from 10,000 BDT' numberColor='!text-blue-950' buttonColor='!bg-blue-950' bgColor='bg-blue-50' iconBg='bg-blue-200 rounded-b-full' borderColor='border-blue-950/20' />
+                            <ServiceCard icon='fas fa-laptop' number='02' title='Software Development' description='Our software development packages start from 10,000 BDT' numberColor='!text-blue-950' buttonColor='!bg-blue-950' bgColor='bg-blue-50' iconBg='bg-blue-200 rounded-b-full' borderColor='border-blue-950/5' />
 
-                            <ServiceCard icon='fa fa-server' number='03' title='Domain, Hosting & Server' description='Our domain and hosting packages start from 3,000 BDT' numberColor='!text-green-950' buttonColor='!bg-green-900' bgColor='bg-green-50' iconBg='bg-green-200 rounded-l-full' borderColor='border-green-950/20' />
+                            <ServiceCard icon='fa fa-server' number='03' title='Domain, Hosting & Server' description='Our domain and hosting packages start from 3,000 BDT' numberColor='!text-green-950' buttonColor='!bg-green-900' bgColor='bg-green-50' iconBg='bg-green-200 rounded-l-full' borderColor='border-green-950/5' />
 
-                            <ServiceCard icon='fa-brands fa-facebook' number='04' title='Social Media Marketing' description='Our social media marketing packages start from 2,000 BDT' numberColor='!text-pink-950' buttonColor='!bg-pink-950' bgColor='bg-pink-50' iconBg='bg-pink-200 rounded-r-full' borderColor='border-pink-950/20' />
+                            <ServiceCard icon='fa-brands fa-facebook' number='04' title='Social Media Marketing' description='Our social media marketing packages start from 2,000 BDT' numberColor='!text-pink-950' buttonColor='!bg-pink-950' bgColor='bg-pink-50' iconBg='bg-pink-200 rounded-r-full' borderColor='border-pink-950/5' />
 
                         </div>
                     </div>

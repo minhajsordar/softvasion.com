@@ -30,7 +30,7 @@ export default function footerSection() {
                                 <h4>Social Media</h4>
                                 <ul>
                                     <li>
-                                        <Link href="https://www.facebook.com/official.softvson">
+                                        <Link href="https://www.facebook.com/softvasion">
                                             <i className="fab fa-facebook-f" />
                                         </Link>
                                     </li>
