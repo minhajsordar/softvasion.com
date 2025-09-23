@@ -1972,7 +1972,7 @@ header {
 
 .single_blog:hover .title,
 .single_blog:hover .more_btn {
-  color: #111e37;
+  color: #0b3744;
 }
 
 /* blog end */
@@ -2013,7 +2013,6 @@ header {
 
 /* footer start */
 footer {
-  background: var(--colorBlack);
   position: relative;
   z-index: 1;
 }
@@ -2040,8 +2039,8 @@ footer::after {
 .footer_contact h4 {
   display: inline-block;
   padding-right: 15px;
-  color: var(--colorWhite);
-  background: var(--colorBlack);
+  color: black;
+  /* background: ; */
   font-size: 14px;
   line-height: 35px;
   font-weight: 500;
@@ -2067,7 +2066,7 @@ footer::after {
 }
 
 .footer_contact p a {
-  color: var(--colorWhite);
+  color: black;
   font-size: 18px;
   line-height: 36px;
   font-weight: 600;
@@ -2089,7 +2088,7 @@ footer::after {
 
 .footer_contact ol li a,
 .footer_contact ul li a {
-  color: var(--colorWhite);
+  color: black;
   font-size: 16px;
   transition: all linear 0.3s;
   -webkit-transition: all linear 0.3s;
@@ -2113,7 +2112,7 @@ footer::after {
 }
 
 .footer_content p {
-  color: rgba(255, 255, 255, 0.70);
+  color: black;
   font-size: 16px;
   font-weight: 400;
   font-family: var(--paraFont);
@@ -2121,7 +2120,7 @@ footer::after {
 }
 
 .footer_content h3 {
-  color: var(--colorWhite);
+  color: black;
   font-family: var(--headingFont);
   font-size: 24px;
   font-weight: 600;
@@ -2138,7 +2137,7 @@ footer::after {
 
 .footer_content ol li a,
 .footer_content ul li a {
-  color: rgba(255, 255, 255, 0.70);
+  color: black;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -2159,7 +2158,7 @@ footer::after {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
-  border: 2px solid rgba(255, 255, 255, 0.10);
+  border: 2px solid ;
   ;
   border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -2171,7 +2170,7 @@ footer::after {
 
 .footer_content form .subscribe input {
   padding: 0;
-  color: var(--colorWhite);
+  color: black;
 }
 
 .footer_content form button {
@@ -2199,7 +2198,7 @@ footer::after {
 }
 
 .copy p {
-  color: rgba(255, 255, 255, 0.70);
+  color:black;
 }
 
 .footer_right_bottom {
@@ -5393,7 +5392,7 @@ CHECKOUT PAGE END
 }
 
 .contact_info {
-  border-bottom: 1px solid #ff383847;
+  border-bottom: 1px solid #00156a;
   padding-bottom: 35px;
   margin-bottom: 35px;
 }
@@ -5500,8 +5499,8 @@ CHECKOUT PAGE END
   left: 0;
   border-radius: 10px 0px 0px 10px;
   transform: translateY(-50%);
-  background: #ff383830;
-  color: #111e37;
+  background:#00156a;
+  color: white;
   border-right: 1px solid #E4E7E9;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -5512,6 +5511,7 @@ CHECKOUT PAGE END
 .contact_form_input input,
 .contact_form_input textarea {
   padding: 12px 20px 12px 65px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .contact_form_input.textarea span {

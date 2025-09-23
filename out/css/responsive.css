@@ -1231,7 +1231,7 @@
   }
 
   .main_menu .right_menu {
-    justify-content: center;
+    /* justify-content: center;  */
     background: var(--colorWhite);
     border-bottom: 1px solid var(--colorPrimary);
     padding: 20px 0px 30px 0px;
