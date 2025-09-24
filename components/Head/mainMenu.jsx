@@ -1,21 +1,23 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect,useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export function MainMenu() {
-
     const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
-
-    const containerRef = useRef(null)
-    // const [filterOpen, setFilterOpen] = useState(false)
+    const containerRef = useRef(null);
 
     const handleClickOutside = (event) => {
-        if (containerRef.current && !containerRef.current.contains(event.target)) {
-            setIsOpen(false)
+        if (
+            containerRef.current &&
+            !containerRef.current.contains(event.target) &&
+            !event.target.closest("button") // toggle button বাদ
+        ) {
+            setIsOpen(false);
         }
-    }
+    };
+
     useEffect(() => {
         document.addEventListener("mousedown", handleClickOutside);
         return () => {
@@ -27,119 +29,122 @@ export function MainMenu() {
         setIsOpen(!isOpen);
     };
 
+    // pathname পরিবর্তন হলে menu বন্ধ করবো
     useEffect(() => {
         setIsOpen(false);
     }, [pathname]);
 
     const isActive = (path) => {
-        return pathname === path ? 'nav-link active' : 'nav-link';
-    }
+        return pathname === path ? "!text-blue-950" : "!text-gray-500";
+    };
+
     return (
         <>
-            <nav className="navbar navbar-expand-lg main_menu" >
+            <nav className="navbar navbar-expand-lg main_menu relative">
                 <div className="container">
-                    <div className="row w-100 flex-nowrap justify-between items-center" ref={containerRef}>
+                    <div className="row w-100 flex-nowrap justify-between items-center relative">
+                        {/* Logo */}
                         <div className="col-6 col-md-3">
-                            <Link className="navbar-brand text-center !w-[200px] !h-[40px]" href="/">
-                                {/* <h2 className="text-blue orbitron-700">SoftVasion</h2> */}
-                                <img className="!w-[250px] !h-[40px]" src="/assets/image/softvasion.svg" alt="" />
+                            <Link
+                                className="navbar-brand text-center !w-[200px] !h-[40px]"
+                                href="/"
+                            >
+                                <img
+                                    className="!w-[250px] !h-[40px]"
+                                    src="/assets/image/softvasion.svg"
+                                    alt="logo"
+                                />
                             </Link>
-
                         </div>
 
+                        {/* Desktop Menu */}
                         <div className="hidden lg:block col-6">
-                            <ul className="flex !justify-end !items-center !gap-2 navbar-nav me-auto mb-2">
-                                <li className="nav-item">
-                                    <Link className={isActive("/")} href="/">Home</Link>
+                            <ul className="flex justify-end items-center gap-4 !font-[sans-serif] font-semibold">
+                                <li>
+                                    <Link
+                                        className={`${isActive("/")} !hover:text-[#00156a] transition-all duration-200 transform hover:scale-105`}
+                                        href="/"
+                                    >
+                                        Home
+                                    </Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link className={isActive("/about.html")} href="/about.html">About Us</Link>
+                                <li>
+                                    <Link
+                                        className={`${isActive("/about.html")} !hover:text-[#00156a] transition-all duration-200 transform hover:scale-105`}
+                                        href="/about.html"
+                                    >
+                                        About Us
+                                    </Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link className={isActive("/service.html")} href="/service.html">Services</Link>
+                                <li>
+                                    <Link
+                                        className={`${isActive("/service.html")} !hover:text-[#00156a] transition-all duration-200 transform hover:scale-105`}
+                                        href="/service.html"
+                                    >
+                                        Services
+                                    </Link>
                                 </li>
-                                {/* <li className="nav-item">
-                                <Link className={isActive("/products")} href="/products">Products</Link>
-                            </li> */}
-                                {/* <li className="nav-item dropdown">
-                                <Link
-                                    className={`${isActive("/page")} ropdown-toggle`}
-                                    href="/page"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                >
-                                    পেইজ +
-                                </Link>
-                                <ul className="dropdown-menu">
-                                    <li><Link className="dropdown-item" href="/page/project">আমাদের প্রোজেক্ট</Link></li>
-                                    <li><Link className="dropdown-item" href="/page/package">আমাদের প্যাকেজ</Link></li>
-                                    <li><Link className="dropdown-item" href="/page/team">আমাদের টিম</Link></li>
-                                    <li><Link className="dropdown-item" href="/page/faq">এফএকিউ</Link></li>
-                                    <li><Link className="dropdown-item" href="/page/blog">ব্লগ</Link></li>
-                                </ul>
-                            </li> */}
-                                <li className="nav-item">
-                                    <Link className={isActive("/contactus.html")} href="/contactus.html">Contact</Link>
+                                <li>
+                                    <Link
+                                        className={`${isActive("/contactus.html")} !hover:text-[#00156a] transition-all duration-200 transform hover:scale-105`}
+                                        href="/contactus.html"
+                                    >
+                                        Contact
+                                    </Link>
                                 </li>
                             </ul>
-
-                            {/* <ul className="right_menu d-flex flex-wrap">
-                            <li>
-                                <Link href="/gate-Link-quote">  </Link>
-                            </li>
-                        </ul> */}
                         </div>
-                        <div className="col-2 !text-end lg:hidden">
-                            <button onClick={toggleMenu} >
+
+
+                        {/* Mobile Menu Button */}
+                        <div className="col-2 text-end lg:hidden">
+                            <button onClick={toggleMenu}>
                                 <img
                                     src="/assets/image/menus.svg"
                                     alt="menu icon"
-                                    className="!w-8 !h-8"
+                                    className="w-8 h-8"
                                 />
                             </button>
                         </div>
-
                     </div>
-                    <div className={`col-12 !w-full !mt-6 bg-white  ${isOpen ? "block" : "hidden"}`} >
-                        <ul className="!flex !flex-col !items-center !gap-5 !py-10 justify-center font-serif !font-semibold text-[#00156a] transform transition-transform duration-300 ease-in-out">
-                            <li className="">
-                                <Link className={isActive("/")} href="/">Home</Link>
-                            </li>
-                            <li className="">
-                                <Link className={isActive("/about.html")} href="/about.html">About Us</Link>
-                            </li>
-                            <li className="">
-                                <Link className={isActive("/service.html")} href="/service.html">Services</Link>
-                            </li>
-
-                            <li className="">
-                                <Link className={isActive("/contactus.html")} href="/contactus.html">Contact</Link>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* <div>
-                        <div
-                            className={`fixed top-0 left-0 h-full w-64 bg-gray-800 text-white transform transition-transform duration-300 ease-in-out`}
-                        >
-                            <div className="p-5 flex justify-between items-center">
-                                <h2 className="text-lg font-bold">Menu</h2>
-                                <button onClick={toggleMenu} className="text-white text-2xl">
-                                    ✕
-                                </button>
-                            </div>
-
-                            <ul className="p-5 space-y-4">
-                                <li><a href="#" className="hover:text-gray-400">Home</a></li>
-                                <li><a href="#" className="hover:text-gray-400">About</a></li>
-                                <li><a href="#" className="hover:text-gray-400">Services</a></li>
-                                <li><a href="#" className="hover:text-gray-400">Contact</a></li>
-                            </ul>
-                        </div>
-                    </div> */}
                 </div>
             </nav>
+
+            {/* Mobile Dropdown Menu */}
+            <div
+                ref={containerRef}
+                className={`lg:hidden w-full bg-white  ${isOpen ? "block" : "hidden"} absolute !z-50`}
+            >
+                <ul className="flex flex-col items-center gap-5 !py-6 font-semibold text-[#00156a] font-serif font-semibold">
+                    <li>
+                        <Link className={isActive("/")} href="/">
+                            Home
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className={isActive("/about.html")} href="/about.html">
+                            About Us
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className={isActive("/service.html")} href="/service.html">
+                            Services
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className={isActive("/contactus.html")} href="/contactus.html">
+                            Contact
+                        </Link>
+                    </li>
+                </ul>
+
+                {/* <div className="banner_btn d-flex flex-wrap justify-center">
+                    <Link href="/contactus.html" className="common_btn btn btn-primary me-3">
+                        Get In Touch
+                    </Link>
+                </div> */}
+
+            </div>
         </>
     );
 }
