@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link';
 
 export default function aboutSection() {
   return (
@@ -60,12 +61,11 @@ export default function aboutSection() {
                         <li>Graphics Design</li>
                         <li>Digital Marketing</li>
                       </ul>
-                      <a
-                        className="common_btn"
-                        href="https://www.facebook.com/softvasion"
-                      >
-                        Free Consultation
-                      </a>
+                      <div className="banner_btn d-flex flex-wrap justify-center">
+                        <Link href="https://www.facebook.com/softvasion" className="common_btn btn btn-primary me-3">
+                          Free Consultation
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>
